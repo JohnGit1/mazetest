@@ -346,14 +346,14 @@
 				});
 				
 				$(".false").click(function(){
-					
-					$(this).removeClass("btn-primary").addClass("btn-danger");
+					var element = $(this);
+					$(element).removeClass("btn-primary").addClass("btn-danger");
 					$(".false-text").show();
 	
 					//$('.modal').modal('hide');
 					window.setTimeout(function() { 
 						$(".false-text").hide();
-						$(this).removeClass("btn-danger").addClass("btn-primary");
+						$(element).removeClass("btn-danger").addClass("btn-primary");
 						$('.modal').modal('hide'); 
 						gameState = 'fade out';
 						requestAnimationFrame(gameLoop);
@@ -474,7 +474,12 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						<p>Ευχαριστούμε που παίξατε</p>
+						<h4 class="modal-title">Μπράβο!!! Νίκησες!!!</h4>
+					</div>
+					<div class="modal-body">
+						<p>Σε ευχαριστούμε που έπαιξες το Mazefun!</p>
+						<p>Κατάφερες να λύσεις και τους δέκα λαβύρινθους και να απαντήσεις σωστά και στις δέκα ερωτήσεις!</p>
+						<p>Τα πήγες πολύ καλα και μην ξεχνάς, όλοι οι συμμαθητές σου και όλα τα παιδιά είναι σαν κι εσένα και θέλουν όλοι να παίζετε και να είστε μια μεγάλη παρέα!!!</p>
 					</div>
 				</div>
 			</div>
