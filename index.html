@@ -1,0 +1,114 @@
+<html>
+
+    <head>
+		<meta charset="utf-8" />
+       
+        <script src="jquery.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link 	rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		
+		<script>
+			$(document).ready(function() {
+				var modalselect1 = '#myModal1';
+				$(modalselect1).modal('show');
+			});	
+		</script>
+		
+		<style>
+        
+            body {
+                background: black;
+                margin: 0;
+                padding: 0;
+                font-family: 'Helvetica';
+            }
+            
+            #instructions {
+                background-color: rgba(0,0,0,0.75);
+                color: white;
+                text-align: center;
+                padding: 32px;
+                margin: 0px;
+                display: inline;
+                border: 2px solid white;
+            }
+
+            #help {
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                padding: 4px;
+                color: white;   
+            }
+
+            #level {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                padding: 4px;
+                color: yellow;   
+                font-weight: bold;
+            }
+			.row {text-align: center}
+			
+			.modal-dialog{
+				width: 60%;
+				height: 70%
+				
+			}
+			.modal-dialog p{
+				color: #016e87;
+			}
+			.modal-header{
+				background-color: #007f72;
+				color: white;
+			}
+			.btn {
+				margin-top: 5%;
+				width: 20%;
+			}
+			.girls:hover{
+				background: #9b09bc;
+			}
+			
+			.boys:hover{
+				background: #125ace;
+			}
+			
+        </style>
+        
+    </head>
+    
+    <body>
+
+	<div id="myModal1" class="modal fade" data-keyboard="false" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header"  style="text-align: center;">
+					<h4 class="modal-title">Γεια σου!!!</h4>
+				</div>
+				<div class="modal-body" style="text-align: center;">
+					<p>	
+						Θα μπορέσεις να βγεις από το λαβύρινθo; <br/>
+						Θα βρεις το δρόμο για την έξοδο και στα δέκα επίπεδα για να κερδίσεις;<br/><br/>
+						Για να τα καταφέρεις, θα πρέπει να απαντήσεις σωστά και στις δέκα ερωτήσεις <br/> που θα βρεις στην έξοδο του λαβύρινθου!<br/><br/>
+						Έτοιμοι;<br/>
+						Ας παίξουμε!!!<br/>
+					</p>
+					
+					<button onclick="location.href = 'boys.html';" class="btn btn-primary boys">Aγόρια</button>
+					<button onclick="location.href = 'girls.html';" class="btn btn-primary girls">Κορίτσια</button>
+
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+    </body>
+
+</html>
+
