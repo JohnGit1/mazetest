@@ -347,14 +347,14 @@
 				
 				$(".false").click(function(){
 					
-					$(".btn").removeClass("btn-primary").addClass("btn-danger");
+					$(this).removeClass("btn-primary").addClass("btn-danger");
 					$(".false-text").show();
 	
 					//$('.modal').modal('hide');
 					window.setTimeout(function() { 
 						$(".false-text").hide();
+						$(this).removeClass("btn-danger").addClass("btn-primary");
 						$('.modal').modal('hide'); 
-						$(".btn").removeClass("btn-danger").addClass("btn-primary");
 						gameState = 'fade out';
 						requestAnimationFrame(gameLoop);
 						
